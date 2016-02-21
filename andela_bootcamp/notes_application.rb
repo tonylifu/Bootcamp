@@ -8,8 +8,8 @@ module NotesApp
 	@@authors = Array.new
 
 
-	def notes_content(notes)
-		@@notes.push(notes)
+	def create(notes_content)
+		@@notes.push(notes_content)
 	end
 	
 	def list
@@ -81,16 +81,16 @@ end
 
 
 my_note = NotesApplication.new("Lifu")
-my_note.notes_content("This is my note")
+my_note.create("This is my note")
 
 my_note1 = NotesApplication.new("Tony")
-my_note1.notes_content("This is Jesus note2")
+my_note1.create("This is Jesus note2")
 
 my_note2 = NotesApplication.new("Eddy")
-my_note2.notes_content("This is my note3")
+my_note2.create("This is my note3")
 
 my_note3 = NotesApplication.new("Ralph")
-my_note3.notes_content("This is my Jesus note4")
+my_note3.create("This is my Jesus note4")
 
 my_note.list
 my_note.edit(9, "Jesus my love")

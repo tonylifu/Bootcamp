@@ -1,7 +1,7 @@
 modules NotesApp
-	describe note_content do
+	describe create do
 		it "takes parameter and update a list" do
-			notes = list
+			notes_content = list + notes_content
 		end
 	end
 
